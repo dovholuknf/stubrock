@@ -17,9 +17,9 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile --cwd docs/
+        run: yarn install --cwd website --frozen-lockfile
       - name: Build website
-        run: yarn --cwd docs build
+        run: yarn --cwd website build
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
