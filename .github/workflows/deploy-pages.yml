@@ -24,4 +24,4 @@ jobs:
         with:
           node-version: 18.x
           cache: 'npm'
-          cache-dependency-path: ./website/package-json.lock
+          cache-dependency-path: ./website/package-lock.json
