@@ -7,12 +7,14 @@ on:
 
 jobs:
   build:
-    name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
+    
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      
+      - name: Use Node
+        uses: actions/setup-node@v2
         with:
-          node-version: 18
-          cache: 'npm'
-          cache-dependency-path: ./website/package-lock.json
+          node-version: 16.x
+          cache: 'yarn'
+          cache-dependency-path: ./website/yarn.lock
