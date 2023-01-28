@@ -19,15 +19,14 @@ jobs:
           cache: 'yarn'
           cache-dependency-path: ./website/yarn.lock
           
-      - name: Use Yarn Fails
+      - name: Use Yarn Works 2
         uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: 'yarn'
           cache-dependency-path: ./website/yarn.lock
           
-      - name: Use Node
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3        
         with:
           node-version: 16
           check-latest: true
