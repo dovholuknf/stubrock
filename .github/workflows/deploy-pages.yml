@@ -20,7 +20,7 @@ jobs:
         run: yarn --cwd website/ install
         
       - name: Build website
-        run: yarn --cwd website/ build
+        run: cd website; yarn build
         working-directory: ./website
 
       # Popular action to deploy to GitHub Pages:
