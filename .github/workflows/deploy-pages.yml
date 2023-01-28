@@ -24,4 +24,4 @@ jobs:
         run: |
           npm install
           npm run build
-        working-directory: sub
+        working-directory: my-website
