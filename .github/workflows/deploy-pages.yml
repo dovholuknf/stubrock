@@ -12,9 +12,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Use Node
+      - name: Use Yarn
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
           cache: 'yarn'
           cache-dependency-path: ./website/yarn.lock
+          
+      - name: Use Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: 'npm'
+          cache-dependency-path: ./website/package-json.lock
