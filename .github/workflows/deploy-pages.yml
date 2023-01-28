@@ -29,6 +29,7 @@ jobs:
       - name: Use Node
         uses: actions/setup-node@v3
         with:
-          node-version: 18.x
-          cache: 'npm'
-          cache-dependency-path: ./website/package-lock.json
+          node-version: 16
+          check-latest: true
+          cache: "npm"
+          cache-dependency-path: website/package-lock.json
