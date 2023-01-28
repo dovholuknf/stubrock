@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 18
           cache: npm
-          cache-dependency-path: "${ GITHUB_WORKSPACE }/website/package-lock.json"
+          cache-dependency-path: ${{github.workspace}}/website/package-lock.json
 
       - name: Install dependencies
         run: npm install
